@@ -20,7 +20,7 @@ In addition, our file system relies on these classes:
 
 **N.B. To open a shell on a formatted device, please run the Shell class in the package Shell.**
 
-A graphical file browser was implemented by Tom Favereau. Several more classes are involved in this extra part of the project:
+A graphical file browser was implemented by Juliette Favereau. Several more classes are involved in this extra part of the project:
 - DiskTool 
 - FileManagerApp 
 - MainFileManager 
@@ -29,7 +29,7 @@ A graphical file browser was implemented by Tom Favereau. Several more classes a
 **N.B. In order to open the file browser, run the MainFileManger class at NOT the FileManagerApp.**
 
 # In Depth Description of core classes
-## FatAccess (Tom Favereau)
+## FatAccess (Juliette Favereau)
 This class interacts with the File Allocation Table of a disk, and allows to read and write in it.
 
 A FatAccess instance has 9 attributes, which all have getters:
@@ -55,7 +55,7 @@ Methods:
 - totalFreeSpace(): returns the number of current free clusters in the FAT.
 - firstFreeCluster(): returns the index of the first free cluster of the FAT.
 
-## DataFile (Tom Favereau)
+## DataFile (Juliette Favereau)
 DataFile encapsulates data associated with a file:
 - its name
 - its extension
@@ -64,7 +64,7 @@ DataFile encapsulates data associated with a file:
 - the index of its first cluster
 - its parent directory
 
-## DataAccess (Tom Favereau, Alicia Shao)
+## DataAccess (Juliette Favereau, Alicia Shao)
 This class allows interaction with the data sectors of a given disk by reading and writing in them.
 
 Requires FatAccess.
@@ -112,7 +112,7 @@ Methods:
 - concatenation(Path path): concatenates a path with an another, if it's possible.
 - getNameCount(): returns the number of elements which constitute the path.
 
-## FileSystem (Tom Favereau, Alicia Shao)
+## FileSystem (Juliette Favereau, Alicia Shao)
 FileSystem implements the IFileSystem interface given in the instructions.
 
 Relies on a device for which a file system is built, its associated DataAccess instance and FatAccess instance, as well as a Path instance representing the working directory of the file system.
@@ -140,7 +140,7 @@ Methods:
 - write(byte[] input) : writes the input in the file and returns the number of bytes effectively written.
 
 
-## Shell (Tom Favereau, Elise Suspène)
+## Shell (Juliette Favereau, Elise Suspène)
 
 Implements a basic shell that supports absolute and relative paths and responds to the commands :
 - ls arg : lists the sub files of arg.
