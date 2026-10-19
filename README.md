@@ -1,7 +1,7 @@
 # SE-TemplateInit-FAT32
 
 # Team
-FAVEREAU Tom
+FAVEREAU Juliette
 
 SHAO Alicia 
 
